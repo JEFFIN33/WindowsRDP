@@ -26,7 +26,6 @@ jobs:
         Invoke-WebRequest https://github.com/JEFFIN33/WindowsRDP/blob/raw/NGROK-AP.bat -OutFile NGROK-AP.bat
         Invoke-WebRequest https://github.com/JEFFIN33/WindowsRDP/blob/raw/NGROK-CHECK.bat -OutFile NGROK-CHECK.bat
         Invoke-WebRequest https://github.com/JEFFIN33/WindowsRDP/blob/raw/loop.bat -OutFile loop.bat
-      run: ./NGROK-AP.bat
     - name: Make YML file for NGROK.
       run: start NGROK-AP.bat
     - name: Enable RDP Access.
