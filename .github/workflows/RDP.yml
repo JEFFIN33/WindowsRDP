@@ -17,6 +17,7 @@ jobs:
       run: | 
         copy nssm.exe C:\Windows\System32
         copy ngrok.exe C:\Windows\System32
+        Copy-Item: D:\a\_temp\2b25163d-856f-4455-a04c-6e86d9e98a98.ps1:3
     - name: Connect your NGROK account
       run: .\ngrok.exe authtoken $Env:NGROK_AUTH_TOKEN
       env:
